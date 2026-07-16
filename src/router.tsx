@@ -1,11 +1,18 @@
 import { createBrowserRouter } from 'react-router-dom'
 
+import { RootLayout } from './components/layout/RootLayout'
+
 export const router = createBrowserRouter([
   {
+    element: <RootLayout />,
     children: [
       {
         path: '/',
-        element: <h1>Bem-vindo à Simulação</h1>,
+        element: (
+          <>
+            <h1>Simulador de Investimentos</h1>
+          </>
+        ),
       },
       {
         path: '/resultado',
