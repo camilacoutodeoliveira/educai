@@ -3,8 +3,8 @@ import { useNavigate } from 'react-router-dom'
 
 import { useTheme } from '@/hooks/useTheme'
 
-import { Divider } from '../layout/Divider'
 import { Button } from './Button'
+import { Divider } from './Divider'
 
 export function Header() {
   const navigate = useNavigate()
